@@ -272,6 +272,7 @@ header h1{
 /* footer */
 footer{
 	margin-top: 100px;
+	margin-bottom: 20px;
 	font-size: 12px;
 	text-align: center;
 }
@@ -324,15 +325,20 @@ footer{
 	}
 	
 	/*header*/
+	.content-wrapper_sp{
+		max-width: 100%
+	}
+	
 	header{
-		height: 208px;
+		height: 560px;
+		background-image: url("../img/header_sp.jpg");
 	}
 	
 	header h1 {
-    	font-size: 24px;
-    	top: 65px;
-    	left: 29px;
-    	letter-spacing: 3px;
+    	font-size: 40px;
+    	top: 80px;
+    	left: 48px;
+    	letter-spacing: 7px;
   	}
 	
 	/*work*/
