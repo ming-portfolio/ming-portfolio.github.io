@@ -6,126 +6,195 @@
         <title>My Portfolio</title>
 		<link rel="icon" type="image/png" href="img/favicon.png">
         <link rel="stylesheet" href="css/style.css">
-		 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 		<meta name="robots" content="noindex,nofollow">
 	</head>
 
     <body>
-        <header class="l-header l-container">
+        <header class="l-header">
                 <h1 class="l-header-img">
-                    <img src="img/header.jpg" width='1366' height='685' alt='My Portfolio' decoding='async' />
+					<picture>
+						<source media="(max-width: 499px)" srcset="img/header_sp.jpg" />
+						<source media="(min-width: 500px)" srcset="img/header.jpg" />
+						<img src="img/header.jpg" width='1366' height='685' alt='My Portfolio' decoding='async' />
+					</picture>
                 </h1>
         </header>
 
-        <main class="u-ptb l-container">
-            <section>
-                <h2 class="c-title-level1">Works<span class="c-title-level2">制作したもの</span></h2>
+        <main class="u-pt">
+			<section class="l-container-s">
+				<h2 class="c-title-level1">News</h2>
 
-				<div class="l-works-new u-mt40 c-works-border">
-					<p class="u-visually-hidden">新しい制作物</p>
-                	<article class="work-new-box u-mt20">
+				<div class="news u-mt40">
+
+					<div class="news-item">
+						<time datetime="2025-05-25" class="news-date">2025/5/25</time>
+						<p>一部修正を行いました</p>
+					</div>
+
+					<div class="news-item">
+						<time datetime="2025-05-25" class="news-date">2025/5/25</time>
+						<p>News項目を追加しました</p>
+					</div>
+
+					<div class="news-item">
+						<time datetime="2025-05-25" class="news-date">2025/5/25</time>
+						<p>About項目にXのリンク追加しました</p>
+					</div>
+
+					<div class="news-item">
+						<time datetime="2025-05-23" class="news-date">2025/5/23</time>
+						<p>一部修正を行いました</p>
+					</div>
+
+					<div class="news-item">
+						<time datetime="2025-05-23" class="news-date">2025/5/23</time>
+						<p>ポートフォリオ（山頂ジャーナルと武者への道）を追加しました</p>
+					</div>
+
+				</div>
+			</section>
+
+			<section class="l-container  u-pt">
+				<h2 class="c-title-level1">Works<span class="c-title-level2">制作したもの</span></h2>
+
+				<section class="works-new u-pt c-works-border">
+					<h3 class="u-visually-hidden">新しい制作物</h3>
+
+					<article class="work-new-box u-mt40">
 						<a href="portfolio/武者への道/" class="work-new-link">
 							<img src="img/busya.jpg" width='1352' height='630' alt='武者への道' decoding='async' class="work-new-image"/>
 						</a>
 
-						<p class="u-mt20">
-							Hello Mentorの課題<br>
-							使用技術：HTML/CSS（コーディングのみ）<br>
-							対応機種：SP/PC<br>
-						</p>
+						<dl class="u-mt40 work-new-about">
+							<dt class="work-new-about-term">制作期間</dt>
+							<dd class="work-new-about-desc">10日（コーディングのみ）</dd>
 
+							<dt class="work-new-about-term">使用技術</dt>
+							<dd class="work-new-about-desc">HTML / CSS / VScode / Figma</dd>
+
+							<dt class="work-new-about-term">対応機種</dt>
+							<dd class="work-new-about-desc">PC / SP</dd>
+
+							<dt class="work-new-about-term">コメント</dt>
+							<dd class="work-new-about-desc">Hello Mentorの課題です。</dd>
+						</dl>
 					</article>
 
-                	<article class="work-new-box u-mt20">
+					<article class="work-new-box u-mt40">
 						<a href="portfolio/山頂ジャーナル/" class="work-new-link">
 							<img src="img/summit-journal.jpg" width='1352' height='630' alt='Shiro' decoding='async' class="work-new-image"/>
 						</a>
 
-						<p class="u-mt20">
-							Hello Mentorの課題<br>
-							使用技術：HTML/CSS（コーディングのみ）<br>
-							対応機種：SP/PC<br>
-						</p>
+						<dl class="u-mt40 work-new-about">
+
+							<dt class="work-new-about-term">制作期間</dt>
+							<dd class="work-new-about-desc">2週間（コーディングのみ）</dd>
+
+							<dt class="work-new-about-term">使用技術</dt>
+							<dd class="work-new-about-desc">HTML / CSS / VScode / Figma</dd>
+
+							<dt class="work-new-about-term">対応機種</dt>
+							<dd class="work-new-about-desc">PC / SP</dd>
+
+							<dt class="work-new-about-term">コメント</dt>
+							<dd class="work-new-about-desc">Hello Mentorの課題です。</dd>
+						</dl>
 
 					</article>
 
-                	<article class="work-new-box u-mt20">
+					<article class="work-new-box u-mt40">
+						<a href="#" class="work-new-link">
+							<img src="img/header.jpg" width="2160" height='1300' alt='My Portfolio' decoding='async' class="work-new-image" />
+						</a>
+
+						<dl class="u-mt40 work-new-about">
+							<dt class="work-new-about-term">制作期間</dt>
+							<dd class="work-new-about-desc">未定（今後も追加や更新予定のため）</dd>
+
+							<dt class="work-new-about-term">使用技術</dt>
+							<dd class="work-new-about-desc">HTML / CSS / Adobe XD / Photoshop / Illustrator</dd>
+
+							<dt class="work-new-about-term">対応機種</dt>
+							<dd class="work-new-about-desc">PC / SP</dd>
+
+							<dt class="work-new-about-term">コメント</dt>
+							<dd class="work-new-about-desc">自分らしさをコンセプトに私が好きな青空や海をイメージした清楚感のある色を選びました。</dd>
+						</dl>
+					</article>
+
+					<article class="work-new-box u-mt40">
 						<a href="portfolio/Shiro/" class="work-new-link">
 							<img src="img/Shiro.jpg" width='1352' height='630' alt='Shiro' decoding='async' class="work-new-image"/>
 						</a>
 
-						<p class="u-mt20">
-							制作期間：1週間（コーディングのみ）<br>
-							使用技術：HTML/CSS<br>
-							対応機種：SP/PC<br>
-						</p>
+						<dl class="u-mt40 work-new-about">
+							<dt class="work-new-about-term">制作期間</dt>
+							<dd class="work-new-about-desc">1週間（コーディングのみ）</dd>
 
-						<div class="work-new-text">
-							<p>デザイン制作者：akane (@omsss22)<br>
-							※下記のサイトのAdobe XDを元にコーディングをしています。</p>
-							<a href="https://note.com/tmy_schaf/n/n49a9b727c5b1" class="work-new-text-link">コーディング練習用のデザイン~お花屋さんのLP編~</a>
-						</div>
+							<dt class="work-new-about-term">使用技術</dt>
+							<dd class="work-new-about-desc">HTML / CSS / Dreamweaver / Adobe XD</dd>
+
+							<dt class="work-new-about-term">対応機種</dt>
+							<dd class="work-new-about-desc">PC / SP</dd>
+
+							<dt class="work-new-about-term">デザイン制作者</dt>
+							<dd class="work-new-about-desc">akane (@omsss22)</dd>
+
+							<dt class="work-new-about-term">コメント</dt>
+							<dd class="work-new-about-desc">
+								下記のサイトのAdobe XDを元にコーディングをしています。<br>
+								<a href="https://note.com/tmy_schaf/n/n49a9b727c5b1" class="work-new-text-link">コーディング練習用のデザイン~お花屋さんのLP編~</a>
+							</dd>
+
+						</dl>
 					</article>
 
-					<div class="work-new-box">
-						<article class="work-new-box u-mt20">
-							<img src="img/header.jpg" width="2160" height='1300' alt='My Portfolio' decoding='async' class="work-new-image" />
-						</a>
+				</section>
 
-						<p class="u-mt20">
-							制作期間：未定（今後も追加や更新予定のため）<br>
-							使用技術：HTML/CSS/Adobe XD/Photoshop/Illustrator<br>
-							対応機種：SP/PC<br>
-						</p>
-
-						<div class="work-new-text">
-							<p>・自分らしさをコンセプトに私が好きな青空や海をイメージした清楚感のある色を選びました。<br>・Adobe XDでのデザインカンプにはじめて挑戦をしました。今後はFigmaからのカンプ作成やコーディングに挑戦予定です。</p>
+				<section class="u-mt40">
+					<div class="c-works-border">
+						<h3 class="u-visually-hidden">大学時代の制作物</h3>
+						<div class="work-past-box u-mt40">
+							<img src="img/wedding.jpg" width='1788' height='942' alt='ウエディングサイト' decoding='async' class="work-past-image"/>
+							<img src='img/yamada-hospital.jpg' width='1788' height='898' alt='小児科サイト' decoding='async' class="work-past-image" />
+							<img src='img/smilecafe.jpg' width='1788' height='1043' alt='カフェサイト' decoding='async' class="work-past-image" />
 						</div>
-						</article>
+
+						<div class="work-past-button">
+							<a href="https://portfolioas.web.fc2.com/">VIEW MORE</a>
+						</div>
+					</div>
+				</section>
+			</section>
+
+			<section class="l-container-s">
+					<h2 class="c-title-level1">About<span class="c-title-level2">私について</span></h2>
+
+				<div class="about u-mt40">
+					<div class="about-image">
+						<img src="img/profile.jpg" width='2160' height='2552' alt='関谷明知佳' decoding='async' />
+					</div>
+
+					<div class="about-profile">
+						<div class="about-head">
+							<p class="about-name">関谷 明知佳</p>
+							<a href="https://x.com/Learn_Akarika">
+								<img src="img/x-logo.svg" width='50' height='50' alt='X' decoding='async' />
+							</a>
+						</div>
+						<p class="about-furigana">セキヤ アチカ</p>
+						<p class="about-text">1999年生まれ。滋賀県出身。<br><br>
+						大学2年生の時にスクールでWEBデザインを学んだことをきっかけ にWEB業界に興味をもちました。<br>
+						卒業後にECサイトの代行会社にて、更新業務を主に担当し、 画像作成などにも携わりました。<br>
+						現在は、Hello MentorでWeb制作を学んでいます。</p>
 					</div>
 				</div>
-            </section>
+			</section>
+		</main>
 
-			<section class="u-mt40">
-				<div class="u-mt40 c-works-border">
-					<p class="u-visually-hidden">大学時代の制作物</p>
-					<div class="work-past-box u-mt20">
-						<img src="img/wedding.jpg" width='1788' height='942' alt='ウエディングサイト' decoding='async' class="work-past-image"/>
-						<img src='img/yamada-hospital.jpg' width='1788' height='898' alt='小児科サイト' decoding='async' class="work-past-image" />
-						<img src='img/smilecafe.jpg' width='1788' height='1043' alt='カフェサイト' decoding='async' class="work-past-image" />
-					</div>
-
-					<div class="work-past-button">
-						<a href="https://portfolioas.web.fc2.com/">VIEW MORE</a>
-					</div>
-				</div>
-            </section>
-
-        </main>
-
-		<section class="l-container-s">
-				<h2 class="c-title-level1">About<span class="c-title-level2">私について</span></h2>
-
-			<div class="about-wrapper u-mt40">
-				<div class="about-image">
-					<img src="img/profile.jpg" width='2160' height='2552' alt='関谷明知佳' decoding='async' />
-				</div>
-
-				<div class="about-profile">
-					<div class="about-sns">
-						<p class="about-name">関谷 明知佳</p>
-						<i class="fa-brands fa-square-x-twitter"></i>
-					</div>
-					<p class="about-furigana">セキヤ アチカ</p>
-					<p class="about-text">1999年生まれ。滋賀県出身。<br><br>
-					大学2年生の時にスクールでWEBデザインを学んだことをきっかけ にWEB業界に興味をもちました。<br>
-					卒業後にECサイトの代行会社にて、更新業務を主に担当し、 画像作成などにも携わりました。<br>
-					現在は、Hello MentorでWeb制作を学んでいます。</p>
-				</div>
-			</div>
-		</section>
-
-		<footer>
+		<footer class="u-pt">
 			<small class="l-footer-text">Copyright &copy; 2025 Sekiya AChika</small>
 		</footer>
     </body>
